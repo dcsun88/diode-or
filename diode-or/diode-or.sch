@@ -1,0 +1,523 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Local:R_local R1
+U 1 1 5E05D679
+P 6700 3400
+F 0 "R1" V 6780 3400 50  0000 C CNN
+F 1 "100R" V 6625 3400 50  0000 C CNN
+F 2 "local:R_0805_HandSoldering" V 6630 3400 30  0001 C CNN
+F 3 "" V 6780 3400 30  0000 C CNN
+F 4 "1%" V 6550 3400 50  0000 C CNN "Tolerance"
+F 5 "0.125W" V 6475 3400 50  0000 C CNN "Power"
+F 6 "Vishay Dale" V 6700 3400 50  0001 C CNN "Manufacturer"
+F 7 "CRCW0805100RFKEA" V 6850 3400 50  0001 C CNN "PartNum"
+	1    6700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E05D681
+P 5100 4450
+F 0 "#PWR02" H 5100 4200 50  0001 C CNN
+F 1 "GND" H 5100 4300 50  0000 C CNN
+F 2 "" H 5100 4450 60  0000 C CNN
+F 3 "" H 5100 4450 60  0000 C CNN
+	1    5100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Management:LM5050-1 U1
+U 1 1 5DFD22D2
+P 4600 3850
+F 0 "U1" H 4700 4300 50  0000 C CNN
+F 1 "LM5050-1" H 4850 4200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering" H 5250 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm5050-1-q1.pdf" H 5700 3800 50  0001 C CNN
+	1    4600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E05D292
+P 5100 4100
+F 0 "C2" H 5125 4200 50  0000 L CNN
+F 1 "0.1uF" H 5125 4000 50  0000 L CNN
+F 2 "local:C_0805_HandSoldering" H 5138 3950 30  0001 C CNN
+F 3 "" H 5100 4100 60  0000 C CNN
+F 4 "50V" H 5000 4000 50  0000 C CNN "Voltage"
+F 5 "10%" H 5200 3900 50  0000 C CNN "Tolerance"
+F 6 "X7R" H 5000 4200 50  0000 C CNN "Dielectric"
+F 7 "Kemet" H 5100 4100 50  0001 C CNN "Manufacturer"
+F 8 "C0805C104K5RACTU" H 5100 4100 50  0001 C CNN "PartNum"
+	1    5100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_x2_KCom_AKA D1
+U 1 1 5E05E259
+P 5050 2200
+F 0 "D1" H 5050 2416 50  0000 C CNN
+F 1 "STPS40H100CW" H 5050 2325 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5050 2200 50  0001 C CNN
+F 3 "~" H 5050 2200 50  0001 C CNN
+	1    5050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:LL4148 D3
+U 1 1 5DFD9C22
+P 6450 3950
+F 0 "D3" H 6450 4050 50  0000 C CNN
+F 1 "LL4148" H 6450 3850 50  0000 C CNN
+F 2 "local:D_MiniMELF-onsemi" H 6450 3950 50  0001 C CNN
+F 3 "" H 6450 3950 50  0001 C CNN
+F 4 "100V" H 6450 4250 50  0001 C CNN "Voltage"
+F 5 "200mA" H 6450 4150 50  0001 C CNN "Current"
+F 6 "ON Semiconductor" H 6450 3750 50  0001 C CNN "Manufacturer"
+F 7 "LL4148" H 6550 3650 50  0001 C CNN "PartNum"
+	1    6450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5DFD4FE0
+P 3050 2200
+F 0 "J1" H 2968 1975 50  0000 C CNN
+F 1 "Conn_01x01" H 2968 2066 50  0000 C CNN
+F 2 "local:Binding_Post_Hex" H 3050 2200 50  0001 C CNN
+F 3 "~" H 3050 2200 50  0001 C CNN
+	1    3050 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5DFD539D
+P 2700 3750
+F 0 "J3" H 2618 3525 50  0000 C CNN
+F 1 "Conn_01x01" H 2618 3616 50  0000 C CNN
+F 2 "local:Binding_Post_Hex" H 2700 3750 50  0001 C CNN
+F 3 "~" H 2700 3750 50  0001 C CNN
+	1    2700 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5DFD5510
+P 2700 4950
+F 0 "J4" H 2618 4725 50  0000 C CNN
+F 1 "Conn_01x01" H 2618 4816 50  0000 C CNN
+F 2 "local:Binding_Post_Hex" H 2700 4950 50  0001 C CNN
+F 3 "~" H 2700 4950 50  0001 C CNN
+	1    2700 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky D4
+U 1 1 5DFD5B4D
+P 3650 4050
+F 0 "D4" V 3604 4129 50  0000 L CNN
+F 1 "SS16T3" V 3695 4129 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 3650 4050 50  0001 C CNN
+F 3 "~" H 3650 4050 50  0001 C CNN
+	1    3650 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D6
+U 1 1 5DFD5FC4
+P 3650 4650
+F 0 "D6" V 3696 4571 50  0000 R CNN
+F 1 "SS16T3" V 3605 4571 50  0000 R CNN
+F 2 "Diode_SMD:D_SMA" H 3650 4650 50  0001 C CNN
+F 3 "~" H 3650 4650 50  0001 C CNN
+	1    3650 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D2
+U 1 1 5DFD6A0D
+P 8050 3850
+F 0 "D2" V 8004 3929 50  0000 L CNN
+F 1 "SMBJ60A" V 8095 3929 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 8050 3850 50  0001 C CNN
+F 3 "~" H 8050 3850 50  0001 C CNN
+	1    8050 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5DFD8D32
+P 8500 2800
+F 0 "J2" H 8580 2842 50  0000 L CNN
+F 1 "Conn_01x01" H 8580 2751 50  0000 L CNN
+F 2 "local:Binding_Post_Hex" H 8500 2800 50  0001 C CNN
+F 3 "~" H 8500 2800 50  0001 C CNN
+	1    8500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5DFD9034
+P 8550 4950
+F 0 "J5" H 8630 4992 50  0000 L CNN
+F 1 "Conn_01x01" H 8630 4901 50  0000 L CNN
+F 2 "local:Binding_Post_Hex" H 8550 4950 50  0001 C CNN
+F 3 "~" H 8550 4950 50  0001 C CNN
+	1    8550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Local:R_local R2
+U 1 1 5DFD9338
+P 7150 3400
+F 0 "R2" V 7230 3400 50  0000 C CNN
+F 1 "100R" V 7075 3400 50  0000 C CNN
+F 2 "local:R_0805_HandSoldering" V 7080 3400 30  0001 C CNN
+F 3 "" V 7230 3400 30  0000 C CNN
+F 4 "1%" V 7000 3400 50  0000 C CNN "Tolerance"
+F 5 "0.125W" V 6925 3400 50  0000 C CNN "Power"
+F 6 "Vishay Dale" V 7150 3400 50  0001 C CNN "Manufacturer"
+F 7 "CRCW0805100RFKEA" V 7300 3400 50  0001 C CNN "PartNum"
+	1    7150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:LL4148 D5
+U 1 1 5DFD98EF
+P 6450 4300
+F 0 "D5" H 6450 4400 50  0000 C CNN
+F 1 "LL4148" H 6450 4200 50  0000 C CNN
+F 2 "local:D_MiniMELF-onsemi" H 6450 4300 50  0001 C CNN
+F 3 "" H 6450 4300 50  0001 C CNN
+F 4 "100V" H 6450 4600 50  0001 C CNN "Voltage"
+F 5 "200mA" H 6450 4500 50  0001 C CNN "Current"
+F 6 "ON Semiconductor" H 6450 4100 50  0001 C CNN "Manufacturer"
+F 7 "LL4148" H 6550 4000 50  0001 C CNN "PartNum"
+	1    6450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5DFDA487
+P 5750 3850
+F 0 "SW1" H 5750 4135 50  0000 C CNN
+F 1 "SW_SPDT" H 5750 4044 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled" H 5750 3850 50  0001 C CNN
+F 3 "~" H 5750 3850 50  0001 C CNN
+	1    5750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5DFE0941
+P 3350 3600
+F 0 "#FLG01" H 3350 3675 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 3773 50  0000 C CNN
+F 2 "" H 3350 3600 50  0001 C CNN
+F 3 "~" H 3350 3600 50  0001 C CNN
+	1    3350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3450 4600 3100
+Wire Wire Line
+	2900 3750 3100 3750
+Wire Wire Line
+	4400 2800 4100 2800
+Wire Wire Line
+	4100 2800 4100 3750
+Connection ~ 4100 3750
+Wire Wire Line
+	4100 3750 4300 3750
+Wire Wire Line
+	3650 4350 4200 4350
+Wire Wire Line
+	4600 4350 4600 4250
+Wire Wire Line
+	3650 4500 3650 4350
+Connection ~ 3650 4350
+Wire Wire Line
+	3650 4800 3650 4950
+Wire Wire Line
+	3650 4950 3100 4950
+Connection ~ 4600 4350
+$Comp
+L Device:C C3
+U 1 1 5DFED35E
+P 3100 4350
+F 0 "C3" H 3125 4450 50  0000 L CNN
+F 1 "10uF" H 3125 4250 50  0000 L CNN
+F 2 "local:C_1206_HandSoldering" H 3138 4200 30  0001 C CNN
+F 3 "" H 3100 4350 60  0000 C CNN
+F 4 "50V" H 3000 4250 50  0000 C CNN "Voltage"
+F 5 "10%" H 3200 4150 50  0000 C CNN "Tolerance"
+F 6 "X7R" H 3000 4450 50  0000 C CNN "Dielectric"
+F 7 "Kemet" H 3100 4350 50  0001 C CNN "Manufacturer"
+F 8 "C0805C104K5RACTU" H 3100 4350 50  0001 C CNN "PartNum"
+	1    3100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4200 3100 3750
+Connection ~ 3100 3750
+Wire Wire Line
+	3100 3750 3350 3750
+Wire Wire Line
+	3100 4500 3100 4950
+Connection ~ 3100 4950
+Wire Wire Line
+	3100 4950 2900 4950
+Wire Wire Line
+	4900 3750 5150 3750
+Wire Wire Line
+	5150 3750 5150 2800
+Wire Wire Line
+	5150 2800 5050 2800
+$Comp
+L Device:C C1
+U 1 1 5DFF091F
+P 7650 3850
+F 0 "C1" H 7675 3950 50  0000 L CNN
+F 1 "22uF" H 7675 3750 50  0000 L CNN
+F 2 "local:C_1206_HandSoldering" H 7688 3700 30  0001 C CNN
+F 3 "" H 7650 3850 60  0000 C CNN
+F 4 "50V" H 7550 3750 50  0000 C CNN "Voltage"
+F 5 "10%" H 7750 3650 50  0000 C CNN "Tolerance"
+F 6 "X7R" H 7550 3950 50  0000 C CNN "Dielectric"
+F 7 "Kemet" H 7650 3850 50  0001 C CNN "Manufacturer"
+F 8 "C0805C104K5RACTU" H 7650 3850 50  0001 C CNN "PartNum"
+	1    7650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2400 5050 2800
+Connection ~ 5050 2800
+Wire Wire Line
+	5050 2800 4800 2800
+Wire Wire Line
+	4750 2200 4550 2200
+Wire Wire Line
+	4550 2200 4550 1850
+Wire Wire Line
+	4550 1850 5550 1850
+Wire Wire Line
+	5550 1850 5550 2200
+Wire Wire Line
+	5550 2200 5350 2200
+Connection ~ 4550 2200
+Wire Wire Line
+	4550 2200 3250 2200
+Wire Wire Line
+	5150 2800 6700 2800
+Connection ~ 5150 2800
+Wire Wire Line
+	7650 3700 7650 2800
+Wire Wire Line
+	8050 3700 8050 2800
+Wire Wire Line
+	8050 4000 8050 4950
+Connection ~ 3650 4950
+Wire Wire Line
+	7650 4000 7650 4950
+Wire Wire Line
+	5100 4250 5100 4350
+Wire Wire Line
+	5100 4350 4600 4350
+Wire Wire Line
+	5100 4350 5100 4450
+Wire Wire Line
+	4900 3850 5100 3850
+Wire Wire Line
+	5100 3850 5100 3950
+Connection ~ 5100 3850
+Wire Wire Line
+	4300 3950 4200 3950
+Wire Wire Line
+	4200 3950 4200 4350
+Connection ~ 4200 4350
+Wire Wire Line
+	4200 4350 4600 4350
+Wire Wire Line
+	6700 3250 6700 2800
+Connection ~ 6700 2800
+Wire Wire Line
+	6700 3550 6700 3950
+Wire Wire Line
+	6700 3950 6600 3950
+Wire Wire Line
+	5950 3950 6150 3950
+Wire Wire Line
+	6150 3950 6150 4300
+Wire Wire Line
+	6150 4300 6300 4300
+Connection ~ 6150 3950
+Wire Wire Line
+	6150 3950 6300 3950
+Connection ~ 7650 2800
+Wire Wire Line
+	7650 2800 8050 2800
+Connection ~ 7650 4950
+Wire Wire Line
+	7650 4950 8050 4950
+Connection ~ 8050 2800
+Wire Wire Line
+	8050 2800 8300 2800
+Connection ~ 8050 4950
+Wire Wire Line
+	8050 4950 8350 4950
+Wire Wire Line
+	6700 2800 7650 2800
+Wire Wire Line
+	3650 4950 7650 4950
+Wire Wire Line
+	7150 3550 7150 4300
+Wire Wire Line
+	7150 4300 6600 4300
+$Comp
+L Device:Battery BT1
+U 1 1 5E020621
+P 6500 2150
+F 0 "BT1" H 6608 2196 50  0000 L CNN
+F 1 "Battery" H 6608 2105 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 6500 2210 50  0001 C CNN
+F 3 "~" V 6500 2210 50  0001 C CNN
+F 4 "9.0V" H 6300 2150 50  0000 C CNN "Voltage"
+	1    6500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E020F85
+P 6500 2500
+F 0 "#PWR01" H 6500 2250 50  0001 C CNN
+F 1 "GND" H 6500 2350 50  0000 C CNN
+F 2 "" H 6500 2500 60  0000 C CNN
+F 3 "" H 6500 2500 60  0000 C CNN
+	1    6500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2500 6500 2350
+Wire Wire Line
+	6500 1950 6500 1750
+Wire Wire Line
+	6500 1750 7150 1750
+Wire Wire Line
+	7150 1750 7150 3250
+Wire Wire Line
+	3350 3750 3350 3600
+Connection ~ 3350 3750
+Connection ~ 5100 4350
+Wire Wire Line
+	3350 3750 3650 3750
+Wire Wire Line
+	3650 4200 3650 4350
+Wire Wire Line
+	3650 3900 3650 3750
+Connection ~ 3650 3750
+Wire Wire Line
+	3650 3750 4100 3750
+$Comp
+L Device:Q_NMOS_GDS Q1
+U 1 1 5E027BE5
+P 4600 2900
+F 0 "Q1" V 4942 2900 50  0000 C CNN
+F 1 "Q_NMOS_GDS" V 4851 2900 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 4800 3000 50  0001 C CNN
+F 3 "~" H 4600 2900 50  0001 C CNN
+	1    4600 2900
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5E02FE77
+P 5400 6050
+F 0 "D8" V 5439 5933 50  0000 R CNN
+F 1 "LED" V 5348 5933 50  0000 R CNN
+F 2 "local:AM2520ZGC09" H 5400 6050 50  0001 C CNN
+F 3 "~" H 5400 6050 50  0001 C CNN
+	1    5400 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D7
+U 1 1 5E0313EA
+P 5400 5650
+F 0 "D7" V 5354 5729 50  0000 L CNN
+F 1 "D_Zener" V 5445 5729 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 5400 5650 50  0001 C CNN
+F 3 "~" H 5400 5650 50  0001 C CNN
+F 4 "4.0V" V 5400 5450 50  0000 C CNN "Voltage"
+	1    5400 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Local:R_local R3
+U 1 1 5E0346FA
+P 5400 5250
+F 0 "R3" V 5480 5250 50  0000 C CNN
+F 1 "14.0K" V 5325 5250 50  0000 C CNN
+F 2 "local:R_0805_HandSoldering" V 5330 5250 30  0001 C CNN
+F 3 "" V 5480 5250 30  0000 C CNN
+F 4 "1%" V 5250 5250 50  0000 C CNN "Tolerance"
+F 5 "0.125W" V 5175 5250 50  0000 C CNN "Power"
+F 6 "Vishay Dale" V 5400 5250 50  0001 C CNN "Manufacturer"
+F 7 "CRCW080514K0FKEA" V 5550 5250 50  0001 C CNN "PartNum"
+	1    5400 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E042C62
+P 5400 6300
+F 0 "#PWR03" H 5400 6050 50  0001 C CNN
+F 1 "GND" H 5400 6150 50  0000 C CNN
+F 2 "" H 5400 6300 60  0000 C CNN
+F 3 "" H 5400 6300 60  0000 C CNN
+	1    5400 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5100 5400 3850
+Wire Wire Line
+	5400 5400 5400 5500
+Wire Wire Line
+	5400 5800 5400 5900
+Wire Wire Line
+	5400 6200 5400 6300
+Wire Wire Line
+	5100 3850 5400 3850
+Connection ~ 5400 3850
+Wire Wire Line
+	5400 3850 5550 3850
+Text Label 3000 3750 0    50   ~ 0
+IN_FET_P
+Text Label 3200 4950 0    50   ~ 0
+IN_OUT_N
+Text Label 3400 2200 0    50   ~ 0
+IN_D_P
+Text Label 7350 2800 0    50   ~ 0
+OUT_P
+Text Label 5250 3850 0    50   ~ 0
+VS
+Text Label 4600 3250 0    50   ~ 0
+GATE
+Text Label 6650 1750 0    50   ~ 0
+BATT
+Text Label 6050 3950 0    50   ~ 0
+VS_OR
+$EndSCHEMATC
