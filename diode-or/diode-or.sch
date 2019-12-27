@@ -45,8 +45,10 @@ U 1 1 5DFD22D2
 P 4600 3850
 F 0 "U1" H 4700 4300 50  0000 C CNN
 F 1 "LM5050-1" H 4850 4200 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering" H 5250 3500 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 5250 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm5050-1-q1.pdf" H 5700 3800 50  0001 C CNN
+F 4 "Texas Instruments" H 4600 3850 50  0001 C CNN "Manufacturer"
+F 5 "LM5050MKX-1" H 4600 3850 50  0001 C CNN "PartNum"
 	1    4600 3850
 	1    0    0    -1  
 $EndComp
@@ -74,6 +76,10 @@ F 0 "D1" H 5050 2416 50  0000 C CNN
 F 1 "STPS40H100CW" H 5050 2325 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 5050 2200 50  0001 C CNN
 F 3 "~" H 5050 2200 50  0001 C CNN
+F 4 "STMicro" H 5050 2200 50  0001 C CNN "Manufacturer"
+F 5 "STPS40H100CW" H 5050 2200 50  0001 C CNN "PartNum"
+F 6 "100V" H 5050 2200 50  0001 C CNN "Voltage"
+F 7 "20A" H 5050 2200 50  0001 C CNN "Current"
 	1    5050 2200
 	1    0    0    -1  
 $EndComp
@@ -97,32 +103,38 @@ L Connector_Generic:Conn_01x01 J1
 U 1 1 5DFD4FE0
 P 3050 2200
 F 0 "J1" H 2968 1975 50  0000 C CNN
-F 1 "Conn_01x01" H 2968 2066 50  0000 C CNN
+F 1 "Binding Post (RED)" H 2968 2066 50  0000 C CNN
 F 2 "local:Binding_Post_Hex" H 3050 2200 50  0001 C CNN
 F 3 "~" H 3050 2200 50  0001 C CNN
+F 4 "Keystone" H 3050 2200 50  0001 C CNN "Manufacturer"
+F 5 "7016" H 3050 2200 50  0001 C CNN "PartNum"
 	1    3050 2200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5DFD539D
-P 2700 3750
-F 0 "J3" H 2618 3525 50  0000 C CNN
-F 1 "Conn_01x01" H 2618 3616 50  0000 C CNN
-F 2 "local:Binding_Post_Hex" H 2700 3750 50  0001 C CNN
-F 3 "~" H 2700 3750 50  0001 C CNN
-	1    2700 3750
+P 2550 3750
+F 0 "J3" H 2468 3525 50  0000 C CNN
+F 1 "Binding Post (RED)" H 2468 3616 50  0000 C CNN
+F 2 "local:Binding_Post_Hex" H 2550 3750 50  0001 C CNN
+F 3 "~" H 2550 3750 50  0001 C CNN
+F 4 "Keystone" H 2550 3750 50  0001 C CNN "Manufacturer"
+F 5 "7016" H 2550 3750 50  0001 C CNN "PartNum"
+	1    2550 3750
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5DFD5510
-P 2700 4950
-F 0 "J4" H 2618 4725 50  0000 C CNN
-F 1 "Conn_01x01" H 2618 4816 50  0000 C CNN
-F 2 "local:Binding_Post_Hex" H 2700 4950 50  0001 C CNN
-F 3 "~" H 2700 4950 50  0001 C CNN
-	1    2700 4950
+P 2550 4950
+F 0 "J4" H 2468 4725 50  0000 C CNN
+F 1 "Binding Post (BLACK)" H 2468 4816 50  0000 C CNN
+F 2 "local:Binding_Post_Hex" H 2550 4950 50  0001 C CNN
+F 3 "~" H 2550 4950 50  0001 C CNN
+F 4 "Keystone" H 2550 4950 50  0001 C CNN "Manufacturer"
+F 5 "7017" H 2550 4950 50  0001 C CNN "PartNum"
+	1    2550 4950
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -133,6 +145,10 @@ F 0 "D4" V 3604 4129 50  0000 L CNN
 F 1 "SS16T3" V 3695 4129 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" H 3650 4050 50  0001 C CNN
 F 3 "~" H 3650 4050 50  0001 C CNN
+F 4 "ON Semiconductor‎" H 3650 4050 50  0001 C CNN "Manufacturer"
+F 5 "SS16T3" H 3650 4050 50  0001 C CNN "PartNum"
+F 6 "60V" H 3650 4050 50  0001 C CNN "Voltage"
+F 7 "1A" H 3650 4050 50  0001 C CNN "Current"
 	1    3650 4050
 	0    1    1    0   
 $EndComp
@@ -144,6 +160,10 @@ F 0 "D6" V 3696 4571 50  0000 R CNN
 F 1 "SS16T3" V 3605 4571 50  0000 R CNN
 F 2 "Diode_SMD:D_SMA" H 3650 4650 50  0001 C CNN
 F 3 "~" H 3650 4650 50  0001 C CNN
+F 4 "ON Semiconductor‎" H 3650 4650 50  0001 C CNN "Manufacturer"
+F 5 "SS16T3" H 3650 4650 50  0001 C CNN "PartNum"
+F 6 "60V" H 3650 4650 50  0001 C CNN "Voltage"
+F 7 "1A" H 3650 4650 50  0001 C CNN "Current"
 	1    3650 4650
 	0    -1   -1   0   
 $EndComp
@@ -155,6 +175,9 @@ F 0 "D2" V 8004 3929 50  0000 L CNN
 F 1 "SMBJ60A" V 8095 3929 50  0000 L CNN
 F 2 "Diode_SMD:D_SMB" H 8050 3850 50  0001 C CNN
 F 3 "~" H 8050 3850 50  0001 C CNN
+F 4 "‎Littelfuse" H 8050 3850 50  0001 C CNN "Manufacturer"
+F 5 "SMBJ60A" H 8050 3850 50  0001 C CNN "PartNum"
+F 6 "60V" H 8050 3850 50  0001 C CNN "Voltage"
 	1    8050 3850
 	0    1    1    0   
 $EndComp
@@ -163,9 +186,11 @@ L Connector_Generic:Conn_01x01 J2
 U 1 1 5DFD8D32
 P 8500 2800
 F 0 "J2" H 8580 2842 50  0000 L CNN
-F 1 "Conn_01x01" H 8580 2751 50  0000 L CNN
+F 1 "Binding Post (RED)" H 8580 2751 50  0000 L CNN
 F 2 "local:Binding_Post_Hex" H 8500 2800 50  0001 C CNN
 F 3 "~" H 8500 2800 50  0001 C CNN
+F 4 "Keystone" H 8500 2800 50  0001 C CNN "Manufacturer"
+F 5 "7016" H 8500 2800 50  0001 C CNN "PartNum"
 	1    8500 2800
 	1    0    0    -1  
 $EndComp
@@ -174,9 +199,11 @@ L Connector_Generic:Conn_01x01 J5
 U 1 1 5DFD9034
 P 8550 4950
 F 0 "J5" H 8630 4992 50  0000 L CNN
-F 1 "Conn_01x01" H 8630 4901 50  0000 L CNN
+F 1 "Binding Post (BLACK)" H 8630 4901 50  0000 L CNN
 F 2 "local:Binding_Post_Hex" H 8550 4950 50  0001 C CNN
 F 3 "~" H 8550 4950 50  0001 C CNN
+F 4 "Keystone" H 8550 4950 50  0001 C CNN "Manufacturer"
+F 5 "7017" H 8550 4950 50  0001 C CNN "PartNum"
 	1    8550 4950
 	1    0    0    -1  
 $EndComp
@@ -216,8 +243,12 @@ U 1 1 5DFDA487
 P 5750 3850
 F 0 "SW1" H 5750 4135 50  0000 C CNN
 F 1 "SW_SPDT" H 5750 4044 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_OS102011MA1QN1_SPDT_Angled" H 5750 3850 50  0001 C CNN
+F 2 "local:ASE1D-2M-10-Z" H 5750 3850 50  0001 C CNN
 F 3 "~" H 5750 3850 50  0001 C CNN
+F 4 "Nidec Copal" H 5750 3850 50  0001 C CNN "Manufacturer"
+F 5 "ASE1D-2M-10-Z" H 5750 3850 50  0001 C CNN "PartNum"
+F 6 "60V" H 5750 3850 50  0001 C CNN "Voltage"
+F 7 "50mA" H 5750 3850 50  0001 C CNN "Current"
 	1    5750 3850
 	1    0    0    -1  
 $EndComp
@@ -235,7 +266,7 @@ $EndComp
 Wire Wire Line
 	4600 3450 4600 3100
 Wire Wire Line
-	2900 3750 3100 3750
+	2750 3750 3100 3750
 Wire Wire Line
 	4400 2800 4100 2800
 Wire Wire Line
@@ -260,14 +291,14 @@ L Device:C C3
 U 1 1 5DFED35E
 P 3100 4350
 F 0 "C3" H 3125 4450 50  0000 L CNN
-F 1 "10uF" H 3125 4250 50  0000 L CNN
+F 1 "1uF" H 3125 4250 50  0000 L CNN
 F 2 "local:C_1206_HandSoldering" H 3138 4200 30  0001 C CNN
 F 3 "" H 3100 4350 60  0000 C CNN
-F 4 "50V" H 3000 4250 50  0000 C CNN "Voltage"
+F 4 "100V" H 3000 4250 50  0000 C CNN "Voltage"
 F 5 "10%" H 3200 4150 50  0000 C CNN "Tolerance"
 F 6 "X7R" H 3000 4450 50  0000 C CNN "Dielectric"
-F 7 "Kemet" H 3100 4350 50  0001 C CNN "Manufacturer"
-F 8 "C0805C104K5RACTU" H 3100 4350 50  0001 C CNN "PartNum"
+F 7 "‎Samsung" H 3100 4350 50  0001 C CNN "Manufacturer"
+F 8 "CL31B105KCHNFNE" H 3100 4350 50  0001 C CNN "PartNum"
 	1    3100 4350
 	1    0    0    -1  
 $EndComp
@@ -280,7 +311,7 @@ Wire Wire Line
 	3100 4500 3100 4950
 Connection ~ 3100 4950
 Wire Wire Line
-	3100 4950 2900 4950
+	3100 4950 2850 4950
 Wire Wire Line
 	4900 3750 5150 3750
 Wire Wire Line
@@ -288,18 +319,18 @@ Wire Wire Line
 Wire Wire Line
 	5150 2800 5050 2800
 $Comp
-L Device:C C1
+L Device:CP1 C1
 U 1 1 5DFF091F
 P 7650 3850
 F 0 "C1" H 7675 3950 50  0000 L CNN
 F 1 "22uF" H 7675 3750 50  0000 L CNN
-F 2 "local:C_1206_HandSoldering" H 7688 3700 30  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.9" H 7688 3700 30  0001 C CNN
 F 3 "" H 7650 3850 60  0000 C CNN
 F 4 "50V" H 7550 3750 50  0000 C CNN "Voltage"
-F 5 "10%" H 7750 3650 50  0000 C CNN "Tolerance"
-F 6 "X7R" H 7550 3950 50  0000 C CNN "Dielectric"
-F 7 "Kemet" H 7650 3850 50  0001 C CNN "Manufacturer"
-F 8 "C0805C104K5RACTU" H 7650 3850 50  0001 C CNN "PartNum"
+F 5 "20%" H 7750 3650 50  0000 C CNN "Tolerance"
+F 6 "Poly" H 7550 3650 50  0000 C CNN "Dielectric"
+F 7 "Panasonic" H 7650 3850 50  0001 C CNN "Manufacturer"
+F 8 "50SVPK22M" H 7650 3850 50  0001 C CNN "PartNum"
 	1    7650 3850
 	1    0    0    -1  
 $EndComp
@@ -378,7 +409,7 @@ Wire Wire Line
 	8050 2800 8300 2800
 Connection ~ 8050 4950
 Wire Wire Line
-	8050 4950 8350 4950
+	8050 4950 8250 4950
 Wire Wire Line
 	6700 2800 7650 2800
 Wire Wire Line
@@ -436,9 +467,14 @@ L Device:Q_NMOS_GDS Q1
 U 1 1 5E027BE5
 P 4600 2900
 F 0 "Q1" V 4942 2900 50  0000 C CNN
-F 1 "Q_NMOS_GDS" V 4851 2900 50  0000 C CNN
+F 1 "IRFP4710PBF" V 4851 2900 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 4800 3000 50  0001 C CNN
 F 3 "~" H 4600 2900 50  0001 C CNN
+F 4 "Infineon" H 4600 2900 50  0001 C CNN "Manufacturer"
+F 5 "IRFP4710PBF" H 4600 2900 50  0001 C CNN "PartNum"
+F 6 "100V" H 4600 2900 50  0001 C CNN "Voltage"
+F 7 "190W" H 4600 2900 50  0001 C CNN "Power"
+F 8 "72A" H 4600 2900 50  0001 C CNN "Current"
 	1    4600 2900
 	0    1    -1   0   
 $EndComp
@@ -450,6 +486,8 @@ F 0 "D8" V 5439 5933 50  0000 R CNN
 F 1 "LED" V 5348 5933 50  0000 R CNN
 F 2 "local:AM2520ZGC09" H 5400 6050 50  0001 C CNN
 F 3 "~" H 5400 6050 50  0001 C CNN
+F 4 "Kingbright" H 5400 6050 50  0001 C CNN "Manufacturer"
+F 5 "AM2520ZGC09" H 5400 6050 50  0001 C CNN "PartNum"
 	1    5400 6050
 	0    -1   -1   0   
 $EndComp
@@ -458,10 +496,13 @@ L Device:D_Zener D7
 U 1 1 5E0313EA
 P 5400 5650
 F 0 "D7" V 5354 5729 50  0000 L CNN
-F 1 "D_Zener" V 5445 5729 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 5400 5650 50  0001 C CNN
+F 1 "MM3Z4V3T1G" V 5445 5729 50  0000 L CNN
+F 2 "local:SOD-323_477-02-H_HandSoldering" H 5400 5650 50  0001 C CNN
 F 3 "~" H 5400 5650 50  0001 C CNN
-F 4 "4.0V" V 5400 5450 50  0000 C CNN "Voltage"
+F 4 "4.3V" V 5400 5450 50  0000 C CNN "Voltage"
+F 5 "ON Semiconductor" H 5400 5650 50  0001 C CNN "Manufacturer"
+F 6 "MM3Z4V3T1G" H 5400 5650 50  0001 C CNN "PartNum"
+F 7 "300mW" V 5330 5430 50  0000 C CNN "Power"
 	1    5400 5650
 	0    1    1    0   
 $EndComp
@@ -520,4 +561,89 @@ Text Label 6650 1750 0    50   ~ 0
 BATT
 Text Label 6050 3950 0    50   ~ 0
 VS_OR
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E029CFC
+P 2600 5400
+F 0 "H1" V 2837 5403 50  0000 C CNN
+F 1 "MountingHole_Pad" V 2746 5403 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2600 5400 50  0001 C CNN
+F 3 "~" H 2600 5400 50  0001 C CNN
+	1    2600 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E02A868
+P 2600 5800
+F 0 "H3" V 2837 5803 50  0000 C CNN
+F 1 "MountingHole_Pad" V 2746 5803 50  0000 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2600 5800 50  0001 C CNN
+F 3 "~" H 2600 5800 50  0001 C CNN
+	1    2600 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E02ABDC
+P 8500 5400
+F 0 "H2" V 8454 5550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 8545 5550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 8500 5400 50  0001 C CNN
+F 3 "~" H 8500 5400 50  0001 C CNN
+	1    8500 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E038BCC
+P 8500 5800
+F 0 "H4" V 8454 5950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 8545 5950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 8500 5800 50  0001 C CNN
+F 3 "~" H 8500 5800 50  0001 C CNN
+	1    8500 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 5800 8250 5800
+Wire Wire Line
+	8250 5800 8250 5400
+Connection ~ 8250 4950
+Wire Wire Line
+	8250 4950 8350 4950
+Wire Wire Line
+	8400 5400 8250 5400
+Connection ~ 8250 5400
+Wire Wire Line
+	8250 5400 8250 4950
+Wire Wire Line
+	2700 5800 2850 5800
+Wire Wire Line
+	2850 5800 2850 5400
+Connection ~ 2850 4950
+Wire Wire Line
+	2850 4950 2750 4950
+Wire Wire Line
+	2700 5400 2850 5400
+Connection ~ 2850 5400
+Wire Wire Line
+	2850 5400 2850 4950
+$Comp
+L Mechanical:Heatsink_Pad HS1
+U 1 1 5E0433E3
+P 3250 5550
+F 0 "HS1" H 3391 5589 50  0000 L CNN
+F 1 "Heatsink_Pad" H 3391 5498 50  0000 L CNN
+F 2 "local:MA-301-27E" H 3262 5500 50  0001 C CNN
+F 3 "~" H 3262 5500 50  0001 C CNN
+	1    3250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 5800 3250 5800
+Wire Wire Line
+	3250 5800 3250 5650
+Connection ~ 2850 5800
+NoConn ~ 5950 3750
 $EndSCHEMATC

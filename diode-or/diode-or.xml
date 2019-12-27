@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/guest/cae/kicad/diode-or/diode-or.sch</source>
+    <date>Thu Dec 26 12:56:58 2019</date>
+    <tool>Eeschema (5.1.5-1-g2528d3844)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>diode-or.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="R1">
+      <value>100R</value>
+      <footprint>local:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="PartNum">CRCW0805100RFKEA</field>
+        <field name="Power">0.125W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Local" part="R_local" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E05D679</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>LM5050-1</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23-6</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm5050-1-q1.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="PartNum">LM5050MKX-1</field>
+      </fields>
+      <libsource lib="Power_Management" part="LM5050-1" description="High side OR-ing FET controller, 5V to 75V operation, TSOT-23-6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD22D2</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.1uF</value>
+      <footprint>local:C_0805_HandSoldering</footprint>
+      <fields>
+        <field name="Dielectric">X7R</field>
+        <field name="Manufacturer">Kemet</field>
+        <field name="PartNum">C0805C104K5RACTU</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E05D292</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>STPS40H100CW</value>
+      <footprint>Package_TO_SOT_THT:TO-247-3_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Current">20A</field>
+        <field name="Manufacturer">STMicro</field>
+        <field name="PartNum">STPS40H100CW</field>
+        <field name="Voltage">100V</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky_x2_KCom_AKA" description="Dual Schottky diode, common cathode on pin 2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E05E259</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LL4148</value>
+      <footprint>local:D_MiniMELF-onsemi</footprint>
+      <fields>
+        <field name="Current">200mA</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="PartNum">LL4148</field>
+        <field name="Voltage">100V</field>
+      </fields>
+      <libsource lib="Diode" part="LL4148" description="100V 0.15A standard switching diode, MiniMELF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD9C22</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Binding Post (RED)</value>
+      <footprint>local:Binding_Post_Hex</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone</field>
+        <field name="PartNum">7016</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD4FE0</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Binding Post (RED)</value>
+      <footprint>local:Binding_Post_Hex</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone</field>
+        <field name="PartNum">7016</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD539D</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Binding Post (BLACK)</value>
+      <footprint>local:Binding_Post_Hex</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone</field>
+        <field name="PartNum">7017</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD5510</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>SS16T3</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Current">1A</field>
+        <field name="Manufacturer">ON Semiconductor‎</field>
+        <field name="PartNum">SS16T3</field>
+        <field name="Voltage">60V</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD5B4D</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>SS16T3</value>
+      <footprint>Diode_SMD:D_SMA</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Current">1A</field>
+        <field name="Manufacturer">ON Semiconductor‎</field>
+        <field name="PartNum">SS16T3</field>
+        <field name="Voltage">60V</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD5FC4</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>SMBJ60A</value>
+      <footprint>Diode_SMD:D_SMB</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">‎Littelfuse</field>
+        <field name="PartNum">SMBJ60A</field>
+        <field name="Voltage">60V</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD6A0D</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Binding Post (RED)</value>
+      <footprint>local:Binding_Post_Hex</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone</field>
+        <field name="PartNum">7016</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD8D32</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Binding Post (BLACK)</value>
+      <footprint>local:Binding_Post_Hex</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Keystone</field>
+        <field name="PartNum">7017</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x01" description="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD9034</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>100R</value>
+      <footprint>local:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="PartNum">CRCW0805100RFKEA</field>
+        <field name="Power">0.125W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Local" part="R_local" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD9338</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LL4148</value>
+      <footprint>local:D_MiniMELF-onsemi</footprint>
+      <fields>
+        <field name="Current">200mA</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="PartNum">LL4148</field>
+        <field name="Voltage">100V</field>
+      </fields>
+      <libsource lib="Diode" part="LL4148" description="100V 0.15A standard switching diode, MiniMELF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFD98EF</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPDT</value>
+      <footprint>local:ASE1D-2M-10-Z</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Current">50mA</field>
+        <field name="Manufacturer">Nidec Copal</field>
+        <field name="PartNum">ASE1D-2M-10-Z</field>
+        <field name="Voltage">60V</field>
+      </fields>
+      <libsource lib="Switch" part="SW_SPDT" description="Switch, single pole double throw"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFDA487</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>local:C_1206_HandSoldering</footprint>
+      <fields>
+        <field name="Dielectric">X7R</field>
+        <field name="Manufacturer">‎Samsung</field>
+        <field name="PartNum">CL31B105KCHNFNE</field>
+        <field name="Tolerance">10%</field>
+        <field name="Voltage">100V</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFED35E</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:CP_Elec_6.3x5.9</footprint>
+      <fields>
+        <field name="Dielectric">Poly</field>
+        <field name="Manufacturer">Panasonic</field>
+        <field name="PartNum">50SVPK22M</field>
+        <field name="Tolerance">20%</field>
+        <field name="Voltage">50V</field>
+      </fields>
+      <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFF091F</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Voltage">9.0V</field>
+      </fields>
+      <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E020621</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRFP4710PBF</value>
+      <footprint>Package_TO_SOT_THT:TO-247-3_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Current">72A</field>
+        <field name="Manufacturer">Infineon</field>
+        <field name="PartNum">IRFP4710PBF</field>
+        <field name="Power">190W</field>
+        <field name="Voltage">100V</field>
+      </fields>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E027BE5</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>LED</value>
+      <footprint>local:AM2520ZGC09</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Kingbright</field>
+        <field name="PartNum">AM2520ZGC09</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E02FE77</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>MM3Z4V3T1G</value>
+      <footprint>local:SOD-323_477-02-H_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="PartNum">MM3Z4V3T1G</field>
+        <field name="Power">300mW</field>
+        <field name="Voltage">4.3V</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E0313EA</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>14.0K</value>
+      <footprint>local:R_0805_HandSoldering</footprint>
+      <fields>
+        <field name="Manufacturer">Vishay Dale</field>
+        <field name="PartNum">CRCW080514K0FKEA</field>
+        <field name="Power">0.125W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Local" part="R_local" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E0346FA</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E029CFC</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E02A868</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E02ABDC</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E038BCC</tstamp>
+    </comp>
+    <comp ref="HS1">
+      <value>Heatsink_Pad</value>
+      <footprint>local:MA-301-27E</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="Heatsink_Pad" description="Heatsink with electrical connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E0433E3</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x01">
+      <description>Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery">
+      <description>Multiple-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP1">
+      <description>Polarized capacitor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky_x2_KCom_AKA">
+      <description>Dual Schottky diode, common cathode on pin 2</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_x2_KCom_AKA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+        <pin num="3" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GDS">
+      <description>N-MOSFET transistor, gate/drain/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="LL4148">
+      <aliases>
+        <alias>LL4448</alias>
+      </aliases>
+      <description>100V 0.15A standard switching diode, MiniMELF</description>
+      <docs>http://www.vishay.com/docs/85557/ll4148.pdf</docs>
+      <footprints>
+        <fp>D*MiniMELF*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LL4148</field>
+        <field name="Footprint">Diode_SMD:D_MiniMELF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Local" part="R_local">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_local</field>
+        <field name="Tolerance">1%</field>
+        <field name="Power">0.125W</field>
+        <field name="Manufacturer">Co</field>
+        <field name="PartNum">CRCW0805vvvvFKEA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="Heatsink_Pad">
+      <description>Heatsink with electrical connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Heatsink:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">HS</field>
+        <field name="Value">Heatsink_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Power_Management" part="LM5050-1">
+      <description>High side OR-ing FET controller, 5V to 75V operation, TSOT-23-6</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm5050-1-q1.pdf</docs>
+      <footprints>
+        <fp>TSOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM5050-1</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VS" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OFF" type="input"/>
+        <pin num="4" name="IN" type="input"/>
+        <pin num="5" name="GATE" type="output"/>
+        <pin num="6" name="OUT" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT">
+      <description>Switch, single pole double throw</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/home/cae/kicad/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/home/cae/kicad/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/home/cae/kicad/share/kicad/library/Diode.lib</uri>
+    </library>
+    <library logical="Local">
+      <uri>/home/guest/cae/kicad/lib/local.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/home/cae/kicad/share/kicad/library/Mechanical.lib</uri>
+    </library>
+    <library logical="Power_Management">
+      <uri>/home/cae/kicad/share/kicad/library/Power_Management.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/home/cae/kicad/share/kicad/library/Switch.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="D8" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="D6" pin="2"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="2" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="3" name="Net-(D3-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="4" name="Net-(SW1-Pad1)">
+      <node ref="SW1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(D7-Pad2)">
+      <node ref="D8" pin="2"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="6" name="Net-(D7-Pad1)">
+      <node ref="R3" pin="2"/>
+      <node ref="D7" pin="1"/>
+    </net>
+    <net code="7" name="/GATE">
+      <node ref="U1" pin="5"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="8" name="/BATT">
+      <node ref="BT1" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="9" name="/VS_OR">
+      <node ref="D5" pin="1"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="10" name="/OUT_P">
+      <node ref="D2" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="6"/>
+      <node ref="D1" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="11" name="/VS">
+      <node ref="SW1" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="12" name="/IN_D_P">
+      <node ref="D1" pin="3"/>
+      <node ref="D1" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="13" name="/IN_FET_P">
+      <node ref="C3" pin="1"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="D4" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="14" name="/IN_OUT_N">
+      <node ref="C3" pin="2"/>
+      <node ref="D6" pin="1"/>
+      <node ref="HS1" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="H1" pin="1"/>
+      <node ref="H2" pin="1"/>
+      <node ref="H4" pin="1"/>
+      <node ref="J4" pin="1"/>
+      <node ref="H3" pin="1"/>
+    </net>
+  </nets>
+</export>
