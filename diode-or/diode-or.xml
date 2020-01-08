@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/home/guest/cae/kicad/diode-or/diode-or.sch</source>
-    <date>Thu Dec 26 12:56:58 2019</date>
+    <date>Tue Jan  7 19:18:08 2020</date>
     <tool>Eeschema (5.1.5-1-g2528d3844)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
+        <title>Diode - ORing</title>
         <company/>
-        <rev/>
-        <date/>
+        <rev>v1.0.0</rev>
+        <date>2020-01-07</date>
         <source>diode-or.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -127,7 +127,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Current">1A</field>
-        <field name="Manufacturer">ON Semiconductor‎</field>
+        <field name="Manufacturer">ON Semiconductor</field>
         <field name="PartNum">SS16T3</field>
         <field name="Voltage">60V</field>
       </fields>
@@ -141,7 +141,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Current">1A</field>
-        <field name="Manufacturer">ON Semiconductor‎</field>
+        <field name="Manufacturer">ON Semiconductor</field>
         <field name="PartNum">SS16T3</field>
         <field name="Voltage">60V</field>
       </fields>
@@ -154,7 +154,7 @@
       <footprint>Diode_SMD:D_SMB</footprint>
       <datasheet>~</datasheet>
       <fields>
-        <field name="Manufacturer">‎Littelfuse</field>
+        <field name="Manufacturer">Littelfuse</field>
         <field name="PartNum">SMBJ60A</field>
         <field name="Voltage">60V</field>
       </fields>
@@ -214,7 +214,7 @@
     </comp>
     <comp ref="SW1">
       <value>SW_SPDT</value>
-      <footprint>local:ASE1D-2M-10-Z</footprint>
+      <footprint>local:ASE1D-6M-10-Z</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Current">50mA</field>
@@ -231,7 +231,7 @@
       <footprint>local:C_1206_HandSoldering</footprint>
       <fields>
         <field name="Dielectric">X7R</field>
-        <field name="Manufacturer">‎Samsung</field>
+        <field name="Manufacturer">Samsung</field>
         <field name="PartNum">CL31B105KCHNFNE</field>
         <field name="Tolerance">10%</field>
         <field name="Voltage">100V</field>
@@ -307,11 +307,11 @@
       <tstamp>5E0313EA</tstamp>
     </comp>
     <comp ref="R3">
-      <value>14.0K</value>
+      <value>634</value>
       <footprint>local:R_0805_HandSoldering</footprint>
       <fields>
         <field name="Manufacturer">Vishay Dale</field>
-        <field name="PartNum">CRCW080514K0FKEA</field>
+        <field name="PartNum">CRCW080634R0FKEA</field>
         <field name="Power">0.125W</field>
         <field name="Tolerance">1%</field>
       </fields>
@@ -352,12 +352,28 @@
       <tstamp>5E038BCC</tstamp>
     </comp>
     <comp ref="HS1">
-      <value>Heatsink_Pad</value>
+      <value>MA-301-27E</value>
       <footprint>local:MA-301-27E</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">Ohmite</field>
+        <field name="PartNum">MA-301-27E</field>
+      </fields>
       <libsource lib="Mechanical" part="Heatsink_Pad" description="Heatsink with electrical connection"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5E0433E3</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>PSSI2021SAY</value>
+      <footprint>Package_TO_SOT_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Manufacturer">NXP Semiconductors</field>
+        <field name="PartNum">PSSI2021SAY</field>
+      </fields>
+      <libsource lib="Local" part="PSSI2021SAY" description="Constant current source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E13FEBC</tstamp>
     </comp>
   </components>
   <libparts>
@@ -515,6 +531,21 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Local" part="PSSI2021SAY">
+      <description>Constant current source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PSSI2021SAY</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="NotConnected"/>
+        <pin num="2" name="IOUT" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="REXT" type="passive"/>
+        <pin num="5" name="VS" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Local" part="R_local">
       <description>Resistor</description>
       <footprints>
@@ -620,86 +651,95 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="U1" pin="2"/>
-      <node ref="U1" pin="3"/>
-      <node ref="D8" pin="1"/>
-      <node ref="C2" pin="2"/>
-      <node ref="D6" pin="2"/>
-      <node ref="BT1" pin="2"/>
-      <node ref="D4" pin="2"/>
-    </net>
-    <net code="2" name="Net-(D5-Pad2)">
-      <node ref="D5" pin="2"/>
-      <node ref="R2" pin="2"/>
-    </net>
-    <net code="3" name="Net-(D3-Pad2)">
-      <node ref="R1" pin="2"/>
-      <node ref="D3" pin="2"/>
-    </net>
-    <net code="4" name="Net-(SW1-Pad1)">
-      <node ref="SW1" pin="1"/>
-    </net>
-    <net code="5" name="Net-(D7-Pad2)">
-      <node ref="D8" pin="2"/>
+    <net code="1" name="Net-(D7-Pad2)">
       <node ref="D7" pin="2"/>
+      <node ref="D8" pin="2"/>
     </net>
-    <net code="6" name="Net-(D7-Pad1)">
+    <net code="2" name="GND">
+      <node ref="D6" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="D8" pin="1"/>
+    </net>
+    <net code="3" name="Net-(D5-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="4" name="Net-(SW1-Pad3)">
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="5" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="6" name="/REXT">
       <node ref="R3" pin="2"/>
-      <node ref="D7" pin="1"/>
+      <node ref="U2" pin="4"/>
     </net>
-    <net code="7" name="/GATE">
+    <net code="7" name="/IOUT">
+      <node ref="D7" pin="1"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="8" name="/GATE">
       <node ref="U1" pin="5"/>
       <node ref="Q1" pin="1"/>
     </net>
-    <net code="8" name="/BATT">
-      <node ref="BT1" pin="1"/>
+    <net code="9" name="/BATT">
       <node ref="R2" pin="1"/>
+      <node ref="BT1" pin="1"/>
     </net>
-    <net code="9" name="/VS_OR">
+    <net code="10" name="/VS_OR">
+      <node ref="SW1" pin="1"/>
       <node ref="D5" pin="1"/>
-      <node ref="SW1" pin="3"/>
       <node ref="D3" pin="1"/>
     </net>
-    <net code="10" name="/OUT_P">
-      <node ref="D2" pin="1"/>
-      <node ref="J2" pin="1"/>
-      <node ref="U1" pin="6"/>
-      <node ref="D1" pin="2"/>
-      <node ref="R1" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="Q1" pin="2"/>
-    </net>
-    <net code="11" name="/VS">
-      <node ref="SW1" pin="2"/>
-      <node ref="R3" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="U1" pin="1"/>
-    </net>
-    <net code="12" name="/IN_D_P">
-      <node ref="D1" pin="3"/>
+    <net code="11" name="/IN_D_P">
       <node ref="D1" pin="1"/>
+      <node ref="D1" pin="3"/>
       <node ref="J1" pin="1"/>
     </net>
-    <net code="13" name="/IN_FET_P">
-      <node ref="C3" pin="1"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="D4" pin="1"/>
+    <net code="12" name="Net-(D3-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="13" name="/OUT_P">
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="6"/>
+      <node ref="D1" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="14" name="/VS">
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="5"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="15" name="/IN_FET_P">
       <node ref="J3" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="C3" pin="1"/>
       <node ref="U1" pin="4"/>
     </net>
-    <net code="14" name="/IN_OUT_N">
+    <net code="16" name="/IN_OUT_N">
+      <node ref="C1" pin="2"/>
       <node ref="C3" pin="2"/>
-      <node ref="D6" pin="1"/>
-      <node ref="HS1" pin="1"/>
+      <node ref="H3" pin="1"/>
       <node ref="J5" pin="1"/>
       <node ref="D2" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="H1" pin="1"/>
       <node ref="H2" pin="1"/>
+      <node ref="H1" pin="1"/>
       <node ref="H4" pin="1"/>
+      <node ref="D6" pin="1"/>
       <node ref="J4" pin="1"/>
-      <node ref="H3" pin="1"/>
+      <node ref="HS1" pin="1"/>
     </net>
   </nets>
 </export>
