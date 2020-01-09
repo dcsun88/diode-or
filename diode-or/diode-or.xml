@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/guest/cae/kicad/diode-or/diode-or.sch</source>
-    <date>Tue Jan  7 19:18:08 2020</date>
+    <date>Thu Jan  9 12:33:03 2020</date>
     <tool>Eeschema (5.1.5-1-g2528d3844)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -311,7 +311,7 @@
       <footprint>local:R_0805_HandSoldering</footprint>
       <fields>
         <field name="Manufacturer">Vishay Dale</field>
-        <field name="PartNum">CRCW080634R0FKEA</field>
+        <field name="PartNum">CRCW0805634RFKEA</field>
         <field name="Power">0.125W</field>
         <field name="Tolerance">1%</field>
       </fields>

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/guest/cae/kicad/diode-or/diode-or.sch)
-    (date "Tue Jan  7 19:18:06 2020")
+    (date "Thu Jan  9 12:33:00 2020")
     (tool "Eeschema (5.1.5-1-g2528d3844)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -263,7 +263,7 @@
       (footprint local:R_0805_HandSoldering)
       (fields
         (field (name Manufacturer) "Vishay Dale")
-        (field (name PartNum) CRCW080634R0FKEA)
+        (field (name PartNum) CRCW0805634RFKEA)
         (field (name Power) 0.125W)
         (field (name Tolerance) 1%))
       (libsource (lib Local) (part R_local) (description Resistor))
