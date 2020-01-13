@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/guest/cae/kicad/diode-or/diode-or.sch</source>
-    <date>Thu Jan  9 12:33:03 2020</date>
+    <date>Fri Jan 10 11:38:09 2020</date>
     <tool>Eeschema (5.1.5-1-g2528d3844)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -156,6 +156,7 @@
       <fields>
         <field name="Manufacturer">Littelfuse</field>
         <field name="PartNum">SMBJ60A</field>
+        <field name="Power">5.0W</field>
         <field name="Voltage">60V</field>
       </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
@@ -244,11 +245,11 @@
       <value>22uF</value>
       <footprint>Capacitor_SMD:CP_Elec_6.3x5.9</footprint>
       <fields>
-        <field name="Dielectric">Poly</field>
+        <field name="Dielectric">Alum</field>
         <field name="Manufacturer">Panasonic</field>
-        <field name="PartNum">50SVPK22M</field>
+        <field name="PartNum">EEE-FK1J220XP</field>
         <field name="Tolerance">20%</field>
-        <field name="Voltage">50V</field>
+        <field name="Voltage">63V</field>
       </fields>
       <libsource lib="Device" part="CP1" description="Polarized capacitor, US symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -281,7 +282,7 @@
       <tstamp>5E027BE5</tstamp>
     </comp>
     <comp ref="D8">
-      <value>LED</value>
+      <value>AM2520ZGC09</value>
       <footprint>local:AM2520ZGC09</footprint>
       <datasheet>~</datasheet>
       <fields>
@@ -293,14 +294,14 @@
       <tstamp>5E02FE77</tstamp>
     </comp>
     <comp ref="D7">
-      <value>MM3Z4V3T1G</value>
+      <value>MM3Z3V0T1G</value>
       <footprint>local:SOD-323_477-02-H_HandSoldering</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Manufacturer">ON Semiconductor</field>
-        <field name="PartNum">MM3Z4V3T1G</field>
+        <field name="PartNum">MM3Z3V0T1G</field>
         <field name="Power">300mW</field>
-        <field name="Voltage">4.3V</field>
+        <field name="Voltage">3.0V</field>
       </fields>
       <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <sheetpath names="/" tstamps="/"/>
