@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Diode - ORing"
-Date "2020-01-07"
-Rev "v1.0.0"
+Date "2020-01-31"
+Rev "v1.0.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -512,13 +512,13 @@ L Local:R_local R3
 U 1 1 5E0346FA
 P 5600 5650
 F 0 "R3" V 5680 5650 50  0000 C CNN
-F 1 "634" V 5525 5650 50  0000 C CNN
+F 1 "4.99K" V 5525 5650 50  0000 C CNN
 F 2 "local:R_0805_HandSoldering" V 5530 5650 30  0001 C CNN
 F 3 "" V 5680 5650 30  0000 C CNN
 F 4 "1%" V 5450 5650 50  0000 C CNN "Tolerance"
 F 5 "0.125W" V 5375 5650 50  0000 C CNN "Power"
 F 6 "Vishay Dale" V 5600 5650 50  0001 C CNN "Manufacturer"
-F 7 "CRCW0805634RFKEA" V 5750 5650 50  0001 C CNN "PartNum"
+F 7 "CRCW08054K99FKEA" V 5750 5650 50  0001 C CNN "PartNum"
 	1    5600 5650
 	1    0    0    -1  
 $EndComp

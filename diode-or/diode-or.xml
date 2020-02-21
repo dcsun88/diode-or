@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/home/guest/cae/kicad/diode-or/diode-or.sch</source>
-    <date>Fri Jan 10 11:38:09 2020</date>
+    <date>Fri Jan 31 15:09:33 2020</date>
     <tool>Eeschema (5.1.5-1-g2528d3844)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Diode - ORing</title>
         <company/>
-        <rev>v1.0.0</rev>
-        <date>2020-01-07</date>
+        <rev>v1.0.1</rev>
+        <date>2020-01-31</date>
         <source>diode-or.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -308,11 +308,11 @@
       <tstamp>5E0313EA</tstamp>
     </comp>
     <comp ref="R3">
-      <value>634</value>
+      <value>4.99K</value>
       <footprint>local:R_0805_HandSoldering</footprint>
       <fields>
         <field name="Manufacturer">Vishay Dale</field>
-        <field name="PartNum">CRCW0805634RFKEA</field>
+        <field name="PartNum">CRCW08054K99FKEA</field>
         <field name="Power">0.125W</field>
         <field name="Tolerance">1%</field>
       </fields>

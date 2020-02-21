@@ -544,7 +544,7 @@
     (fp_text reference R3 (at 2.8 0 90) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 634 (at -0.1 -1.5 90) (layer B.Fab)
+    (fp_text value 4.99K (at -0.1 -1.5 90) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text user %R (at 0 0 90) (layer B.Fab)
