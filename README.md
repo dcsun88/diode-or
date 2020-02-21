@@ -9,6 +9,6 @@ The passive or'ing is two parallel 20A 100V shcottky diodes.  The active or'ing 
 * 2x Wakefield-Vette  CD-02-05-247 Or CD-02-05-247-N  TO-247 ulTIMiFlux Dielectric Phase Change Thermal Material
 * 1  Pomona  4115  Binding post shorting link
 * 5x Binding post connector assembly.
-** 5x TE Connectivity  326854  Terminal, Ring 14-16AWG #2 
-** 5x TE Connectivity  34123  Terminal, Ring 14-16AWG #10 
-** 5x McMaster-Carr 69925K67  Grounding Braid Noninsulated, 14 Wire Gauge Equivalent, 20mm Length
+   * 5x TE Connectivity  326854  terminal, ring 14-16AWG  #2 stud
+   * 5x TE Connectivity  34123  terminal, ring 14-16AWG  #10 stud
+   * 5x McMaster-Carr 69925K67  grounding braid noninsulated, 14 wire gauge equivalent, 20mm length
